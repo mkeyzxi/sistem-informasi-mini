@@ -1,4 +1,3 @@
-// File: frontend/src/main.js
 import App from './App.js';
 import { navigateTo } from './utils/router.js';
 

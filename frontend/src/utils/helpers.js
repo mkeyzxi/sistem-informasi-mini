@@ -1,5 +1,3 @@
-// File: frontend/src/utils/helpers.js
-
 // Alamat base URL API backend
 export const API_URL = 'http://localhost:5000/api';
 

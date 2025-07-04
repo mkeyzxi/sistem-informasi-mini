@@ -1,4 +1,3 @@
-// File: backend/controllers/scheduleController.js
 import asyncHandler from 'express-async-handler';
 import Schedule from '../models/Schedule.js';
 import AuditLog from '../models/AuditLog.js';

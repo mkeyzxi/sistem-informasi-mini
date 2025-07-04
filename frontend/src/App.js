@@ -1,4 +1,3 @@
-// File: frontend/src/App.js
 import { resolveRoute } from './utils/router.js';
 import { isLoggedIn } from './utils/auth.js';
 import Header from './components/Header.js';

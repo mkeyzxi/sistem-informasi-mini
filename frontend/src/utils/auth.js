@@ -1,4 +1,3 @@
-// File: frontend/src/utils/auth.js
 
 const USER_KEY = 'siakad_user';
 const TOKEN_KEY = 'siakad_token';
