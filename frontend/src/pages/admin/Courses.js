@@ -156,19 +156,19 @@ const showCourseModal = (course, lecturers, onSaveSuccess) => {
         <input type="hidden" id="course-id" value="${course ? course._id : ''}">
         <div>
             <label for="code" class="block text-sm font-medium text-gray-700">Kode</label>
-            <input type="text" id="code" value="${course ? course.code : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <input type="text" id="code" value="${course ? course.code : ''}" required class="mt-1 block w-full rounded-md h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
         </div>
         <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Nama Mata Kuliah</label>
-            <input type="text" id="name" value="${course ? course.name : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <input type="text" id="name" value="${course ? course.name : ''}" required class="mt-1 block w-full h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
         </div>
         <div>
             <label for="credits" class="block text-sm font-medium text-gray-700">SKS</label>
-            <input type="number" id="credits" value="${course ? course.credits : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <input type="number" id="credits" value="${course ? course.credits : ''}" required class="mt-1 block w-full h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
         </div>
         <div>
             <label for="lecturer" class="block text-sm font-medium text-gray-700">Dosen</label>
-            <select id="lecturer" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <select id="lecturer" required class="h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
             <option value="">Select Dosen</option>
             ${lecturerOptions}
             </select>
@@ -211,7 +211,7 @@ const showEnrollmentModal = (course) => {
             <p class="text-sm text-gray-600 mb-4">Masukkan satu atau lebih NIM, pisahkan dengan baris baru (Enter).</p>
             <div>
                 <label for="student-nims-textarea" class="sr-only">NIM Mahasiswa</label>
-                <textarea id="student-nims-textarea" rows="10" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="2100018001\n2100018002\n2100018003"></textarea>
+                <textarea id="student-nims-textarea" rows="10" class="block w-full rounded-md border-gray-300 h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm " placeholder="2100018001\n2100018002\n2100018003"></textarea>
             </div>
         </form>
     `;

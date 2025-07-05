@@ -182,25 +182,25 @@ const showUserModal = (user, onSaveSuccess) => {
             <input type="hidden" id="user-id" value="${user ? user._id : ''}">
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" value="${user ? user.name : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <input type="text" id="name" value="${user ? user.name : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500">
             </div>
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" value="${user ? user.email : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <input type="email" id="email" value="${user ? user.email : ''}" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500">
             </div>
             <div>
                 <label for="password" class="block text-sm font-medium text-gray-700">Password ${!user ? '' : '(Leave blank to keep current)'}</label>
-                <input type="password" id="password" ${!user ? 'required' : ''} class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <input type="password" id="password" ${!user ? 'required' : ''} class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500">
             </div>
             <div>
                 <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
-                <select id="role" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <select id="role" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                     <option value="mahasiswa" ${user && user.role === 'mahasiswa' ? 'selected' : ''}>Mahasiswa</option>
                     <option value="dosen" ${user && user.role === 'dosen' ? 'selected' : ''}>Dosen</option>
                     <option value="admin" ${user && user.role === 'admin' ? 'selected' : ''}>Admin</option>
                 </select>
             </div>
-            <div id="role-specific-fields-modal"></div>
+            <div id="role-specific-fields-modal" ></div>
         </form>
     `;
 
@@ -244,7 +244,8 @@ const showUserModal = (user, onSaveSuccess) => {
             roleFieldsContainer.innerHTML = `
                 <div>
                     <label for="studentId-modal" class="block text-sm font-medium text-gray-700">Student ID (NIM)</label>
-                    <input type="text" id="studentId-modal" value="${user && user.studentId ? user.studentId : ''}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+            <div id="role-specific-fields-modal" class="h-10 ring-1 focus:ring-indigo-500 focus:border-indigo-500"></div>
+                    <input type="text" id="studentId-modal" value="${user && user.studentId ? user.studentId : ''}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm ">
                 </div>`;
         } else if (role === 'dosen') {
             roleFieldsContainer.innerHTML = `
