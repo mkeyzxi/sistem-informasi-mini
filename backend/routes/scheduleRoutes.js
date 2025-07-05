@@ -1,4 +1,3 @@
-// File: backend/routes/scheduleRoutes.js
 import express from 'express';
 import {
   getSchedules,

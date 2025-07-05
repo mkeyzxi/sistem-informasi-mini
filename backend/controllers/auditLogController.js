@@ -1,4 +1,3 @@
-// File: backend/controllers/auditLogController.js
 import asyncHandler from 'express-async-handler';
 import AuditLog from '../models/AuditLog.js';
 

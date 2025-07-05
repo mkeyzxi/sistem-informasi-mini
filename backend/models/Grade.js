@@ -1,4 +1,3 @@
-// File: backend/models/Grade.js
 import mongoose from 'mongoose';
 
 const gradeSchema = mongoose.Schema(
@@ -18,10 +17,7 @@ const gradeSchema = mongoose.Schema(
       required: true,
       enum: ['A', 'B', 'C', 'D', 'E'],
     },
-    semester: {
-      type: Number,
-      required: true,
-    },
+    // FIX: Field 'semester' telah dihapus dari skema
   },
   {
     timestamps: true,

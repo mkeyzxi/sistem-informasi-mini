@@ -1,4 +1,3 @@
-// File: frontend/src/api/scheduleApi.js
 import { apiRequest } from '../utils/helpers.js';
 import { getToken } from '../utils/auth.js';
 

@@ -1,4 +1,3 @@
-// File: frontend/src/api/userApi.js
 import { apiRequest } from '../utils/helpers.js';
 import { getToken } from '../utils/auth.js';
 

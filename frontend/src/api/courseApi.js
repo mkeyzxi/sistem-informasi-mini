@@ -1,36 +1,3 @@
-// // File: frontend/src/api/courseApi.js
-// import { apiRequest } from '../utils/helpers.js';
-// import { getToken } from '../utils/auth.js';
-
-// export const fetchCourses = (params = {}) => {
-//   const token = getToken();
-//   const queryString = new URLSearchParams(params).toString();
-//   return apiRequest(`/courses?${queryString}`, {}, token);
-// };
-
-// export const createCourse = (courseData) => {
-//   const token = getToken();
-//   return apiRequest('/courses', {
-//     method: 'POST',
-//     body: JSON.stringify(courseData),
-//   }, token);
-// };
-
-// export const updateCourse = (id, courseData) => {
-//   const token = getToken();
-//   return apiRequest(`/courses/${id}`, {
-//     method: 'PUT',
-//     body: JSON.stringify(courseData),
-//   }, token);
-// };
-
-// export const deleteCourse = (id) => {
-//   const token = getToken();
-//   return apiRequest(`/courses/${id}`, {
-//     method: 'DELETE',
-//   }, token);
-// };
-
 import { apiRequest } from '../utils/helpers.js';
 import { getToken } from '../utils/auth.js';
 

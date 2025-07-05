@@ -1,4 +1,3 @@
-// File: backend/utils/generateToken.js
 import jwt from 'jsonwebtoken';
 
 const generateToken = (id, role) => {

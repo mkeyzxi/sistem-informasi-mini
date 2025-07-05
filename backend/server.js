@@ -1,4 +1,3 @@
-
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -12,7 +11,7 @@ import courseRoutes from './routes/courseRoutes.js';
 import scheduleRoutes from './routes/scheduleRoutes.js';
 import gradeRoutes from './routes/gradeRoutes.js';
 import auditLogRoutes from './routes/auditLogRoutes.js';
-import enrollmentRoutes from './routes/enrollmentRoutes.js'; // <-- DITAMBAHKAN
+// import enrollmentRoutes from './routes/enrollmentRoutes.js'; // Note: This seems redundant if handled within other routes
 
 // Load env vars
 dotenv.config();
@@ -37,7 +36,7 @@ app.use('/api/courses', courseRoutes);
 app.use('/api/schedules', scheduleRoutes);
 app.use('/api/grades', gradeRoutes);
 app.use('/api/audit-logs', auditLogRoutes);
-app.use('/api/enrollments', enrollmentRoutes); // <-- DITAMBAHKAN
+// app.use('/api/enrollments', enrollmentRoutes); // Note: Enrollment logic is likely part of courseRoutes
 
 
 // Custom Error Handling
@@ -49,5 +48,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
-
-

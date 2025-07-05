@@ -1,4 +1,3 @@
-// File: backend/models/Schedule.js
 import mongoose from 'mongoose';
 
 const scheduleSchema = mongoose.Schema(

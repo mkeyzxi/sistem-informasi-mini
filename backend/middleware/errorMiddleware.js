@@ -1,4 +1,3 @@
-// File: backend/middleware/errorMiddleware.js
 
 // Handler untuk rute yang tidak ditemukan (404)
 const notFound = (req, res, next) => {
